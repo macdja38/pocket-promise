@@ -29,13 +29,8 @@
     "url": "https://github.com/pdehaan/pocket-promise.git"
   },
   "scripts": {
-    "build": "npm run clean; npm run compile",
-    "clean": "rimraf dist .DS_Store npm-debug.log",
-    "compile": "babel src --out-dir dist",
-    "outdated": "npm outdated --depth 0",
-    "prebuild": "npm test",
-    "prepublish": "npm run build",
-    "test": "standard && npm run outdated"
+    "build": "npm run compile",
+    "compile": "babel src --out-dir dist"
   },
   "standard": {
     "ignore": [
